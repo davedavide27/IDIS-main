@@ -81,10 +81,6 @@ $conn->close();
         }
 
         /* Highlighted subject button */
-        .selected-subject {
-            background-color: #FF0000;
-            color: white;
-        }
 
         /* No data message */
         .no-data-message {
@@ -119,10 +115,7 @@ $conn->close();
                     <!-- Instructor Assigned will initially be empty -->
                     <ul id="assignedInstructor">Instructor Assigned: <span id="instructorName">N/A</span></ul>
                 </div>
-                <div>
-                    <button onclick="location.href='../logout.php';" class="logout-button">Logout</button>
-                    <p id="logoutMessage" class="logout-message"></p>
-                </div>
+
                 <div class="subsContainer">
                     <div class="subjects">
                         <div>
@@ -145,6 +138,9 @@ $conn->close();
 
                     </div>
                 </div>
+                <form action="../logout.php" method="post">
+                    <button class="logout_btn" type="submit">Logout</button>
+                </form>
             </nav>
             <div class="implementContainer">
                 <header>

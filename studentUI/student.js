@@ -101,7 +101,7 @@ function appendILOsToTable(data, subjectCode) {
                     <tr data-ilo="${ilo}_${section}">
                         <td>${ilo} (${section})</td>
                         <td>
-                            <input type="text" placeholder="Enter comments..." class="ilo-comment">
+                            <input type="text" placeholder="Enter comments..." class="ilo-comment" >
                             <button onclick="submitComment('${subjectCode}', '${ilo}', this)">Submit</button>
                         </td>
                     </tr>`;

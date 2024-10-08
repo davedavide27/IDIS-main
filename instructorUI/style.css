@@ -235,20 +235,19 @@ a{
     text-decoration-line: none;
     color: black;
 }
-#containerPlan{
+.containerPlan{
     display: flex;
     justify-content: center;
 }
-#containerPlan p{
+.containerPlan p{
     color: black;
 }
 .planCard{
     background-color: whitesmoke;
-    width: 300pt;
-    height: 300pt;
+    width: 270pt;
+    height: 280pt;
     margin: 20pt;
-    border-top-right-radius: 10pt;
-    border-bottom-left-radius: 10pt;
+    border-radius: 10pt;
     box-shadow: 1pt 1pt 15pt 1pt;
 }
 
@@ -268,14 +267,13 @@ a{
 .commentCard .footerTopic{
     background-color: #0C1821;
     color: white;
-    border-bottom-right-radius: 5pt;
-    border-bottom-left-radius: 5pt;
 }
+
 
 .logout_btn{
     display: block;
     margin: auto;
-    margin-top: 240px;
+    margin-top: 223px;
     padding: 7px 20px;
     border-radius: 5px;
     border-style: none;
@@ -292,3 +290,4 @@ a{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+

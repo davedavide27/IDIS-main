@@ -76,7 +76,7 @@ $conn->close();
 
         /* Selected Subject Button Styling */
         .selected-subject {
-            background-color: #FF0000;
+            background-color: #1e90ff;
             /* Add some thickness to the border */
             color: white;
             /* Make text white for better contrast */
@@ -135,7 +135,7 @@ $conn->close();
         }
 
 
-        #containerComment ,
+        #containerComment,
         #competenciesTable {
             max-height: 420pt;
             /* Adjust height to control scrollable area */

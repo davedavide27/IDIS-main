@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *{
     margin: 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .containerOfAll{
     display: grid;
@@ -29,6 +31,7 @@ body{
 }
 .navSubject{
     background-color: #324A5F;
+    height: auto;
 }
 .implementContainer{
     background-color: #0C1821;
@@ -36,6 +39,7 @@ body{
 }
 .implementContainer h5, p{
     color: white;
+    font-size: 1rem;
 }
 .navtab button{
     background-color: goldenrod;
@@ -43,13 +47,13 @@ body{
     margin-right: 1pt;
     margin-top: 30pt;
     height: 20pt;
-    box-shadow: -1pt -1pt 15pt 1pt
+    box-shadow: 0pt -1pt 7pt 1pt
 }
 main{
     background-color: burlywood;
-    width: 97.8%;
+    width: 100%;
     border-bottom-right-radius: 10pt;
-    box-shadow: 10px 20px 20px;
+    box-shadow: 10px 10px 20px;
 }
 .subList{
     background-color: white;
@@ -64,7 +68,13 @@ main{
     text-align: center;
     margin-bottom: 5pt;
     width: 100pt;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 10px;
+    padding: 10px;
 }
+
 
 /*DISPLAYS*/
 .navSubject ul{
@@ -85,10 +95,12 @@ main{
 }
 .navSubject .selectIns select{
     /*display: none;*/
+    justify-self: center;
     text-align: center;
     border-radius: 10pt;
-    width: 70%;
-    margin-left: 15%;
+    width: 82%;
+    margin-left: 10%;
+    padding: 10px 20px;
 }
 .selectSub button{
     display: none;
@@ -127,6 +139,7 @@ main{
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px;
     background-color: goldenrod;
+    align-items: center;
 }
 
 /*.navSubject button:hover .dropdownBtnContent {
@@ -135,7 +148,7 @@ main{
 
 .navtab {
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 50% 50%;
 }
 .navtab button{
     border-top-left-radius: 5pt;
@@ -155,14 +168,23 @@ header{
 .tabcontent{
   display: none;
   text-align: center;
-  height: 530pt;
+  height: 500px;
+  overflow-y: auto;
 }
 
+.tablinks{
+    font-weight: 800;
+    font-size: 1rem;
+}
 .navtab button:hover {
     cursor: pointer;
     background-color: burlywood;
     }
 
+h6{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
 /*MAIN nani dire dapit*/
 
 
@@ -181,14 +203,19 @@ table{
 .remarksTable th{
     background-color: #0C1821;
     text-align: center;
+    color: white;
 }
 .remarksTable tr{
-    background-color: #324A5F;
+    background-color: white;
+    color: black;
 }
 .remarksTable .submitRate{
     background-color: burlywood;
 }
-
+input[type=checkbox]
+{
+  transform: scale(2);
+}
 
 /*INPUTS*/
 .inputRange input{
@@ -208,4 +235,73 @@ table{
     .selectSub button{
         width: 20%;
     }
+}
+
+
+
+/* plans */
+a{
+    text-decoration-line: none;
+    color: black;
+}
+#container_plans {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+#container_plans p{
+    color: black;
+}
+.container_compe{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.planCard{
+    background-color: whitesmoke;
+    width: 270pt;
+    height: 280pt;
+    margin: 20pt;
+    border-radius: 10pt;
+    box-shadow: 1pt 1pt 15pt 1pt;
+}
+
+
+.logout_btn{
+    display: block;
+    margin: auto;
+    margin-top: 223px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background: #1e90ff;
+    color: fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    -webkit-transform-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.logout_btn:hover, logout_btn:focus, logout_btn:active{
+    box-shadow: 0 0 20px rgba (0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+ul{
+    font-weight: 900;
+    text-align: left;
+}
+.logout-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+/* Highlight the selected subject button */
+.selected-subject {
+    background-color: #1e90ff;
+}
+
+.intructor_Name{
+    align-items: center;
 }
