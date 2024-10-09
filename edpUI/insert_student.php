@@ -195,7 +195,7 @@ $conn->close();
             font-size: 16px;
             line-height: 1.5;
             color: #495057;
-            background-color: #fff;
+            background-color: #f9f9f9;
             background-clip: padding-box;
             border: 1px solid #ced4da;
             border-radius: 5px;
@@ -213,6 +213,24 @@ $conn->close();
             border-color: #80bdff;
             outline: none;
             box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -275,7 +293,7 @@ $conn->close();
                     </option>
                 <?php endforeach; ?>
             </select>
-            <br><br>
+            <br>
             <!-- Section Field -->
             <label for="section">Section:</label>
             <input type="text" name="section" value="<?php echo $_SESSION['form_data']['section'] ?? ''; ?>" required>
@@ -288,8 +306,8 @@ $conn->close();
                 <option value="3" <?php echo (isset($_SESSION['form_data']['year_level']) && $_SESSION['form_data']['year_level'] == '3') ? 'selected' : ''; ?>>3rd Year</option>
                 <option value="4" <?php echo (isset($_SESSION['form_data']['year_level']) && $_SESSION['form_data']['year_level'] == '4') ? 'selected' : ''; ?>>4th Year</option>
             </select>
-                    <br>
-            <button type="submit" name="create_student" style="margin: 0 auto; display: block;">Create Student</button>
+            <br>
+            <button type="submit" name="create_student">Create Student</button>
         </form>
     </div>
 </body>

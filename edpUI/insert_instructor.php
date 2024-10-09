@@ -161,7 +161,24 @@ $conn->close();
         .back-button:hover {
             background-color: #d32f2f;
         }
-        
+
+        form button {
+            width: 100%;
+            margin-top: 50px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
@@ -213,7 +230,7 @@ $conn->close();
             <label for="password">Password:</label>
             <input type="password" name="password" required>
 
-            <button type="submit" style="margin: 0 auto; display: block;"name="create_instructor">Create Instructor</button>
+            <button type="submit" style="margin: 0 auto; display: block;" name="create_instructor">Create Instructor</button>
         </form>
     </div>
 

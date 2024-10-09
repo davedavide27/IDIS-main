@@ -102,7 +102,16 @@ $conn->close();
     <link rel="stylesheet" href="../style2.css">
     <title>Reset Password</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .containerOfAll {
+            height: 680px;
+            width: 500px;
             margin: 20px auto;
             padding: 20px;
             max-width: 800px;
@@ -181,7 +190,7 @@ $conn->close();
             cursor: pointer;
             top: 10px;
             left: 20px;
-            width: 25%;
+            width: 20%;
         }
 
         .back-button:hover {
@@ -195,6 +204,24 @@ $conn->close();
 
         label {
             margin-top: 10px;
+        }
+
+        select {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            margin-right: 10px;
+            width: 100%;
         }
     </style>
 </head>
@@ -287,21 +314,21 @@ $conn->close();
         }
 
         // Notification handling logic
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const notification = document.querySelector('.notification');
             const clearAllButton = document.getElementById('clearAllButton');
 
             if (clearAllButton) {
-                clearAllButton.addEventListener('click', function () {
+                clearAllButton.addEventListener('click', function() {
                     notification.remove();
                     clearAllButton.style.display = 'none';
                 });
             }
 
             if (notification) {
-                setTimeout(function () {
+                setTimeout(function() {
                     notification.classList.add('fade-out');
-                    setTimeout(function () {
+                    setTimeout(function() {
                         notification.remove();
                     }, 500);
                 }, 4000);

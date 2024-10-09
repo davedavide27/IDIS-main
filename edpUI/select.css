@@ -2,7 +2,7 @@
         .containerOfAll {
             width: 80%;
             margin: 20px auto;
-            font-family: Arial, sans-serif;
+
         }
 
         h3,
@@ -74,11 +74,9 @@
             padding: 8px 12px;
             font-size: 14px;
             border-radius: 5px;
-            border: none;
             cursor: pointer;
             top: 10px;
             left: 20px;
-            width: 5%;
         }
 
         .back-button:hover {
