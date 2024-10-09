@@ -84,6 +84,7 @@ $conn->close();
             /* Add padding to make it look more like a button */
             border-radius: 5px;
             /* Add border-radius for smooth edges */
+            border-style: none;
         }
 
         /* Comment Card Styling */

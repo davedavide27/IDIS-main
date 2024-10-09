@@ -92,6 +92,13 @@ $conn->close();
     <link rel="stylesheet" href="vp.css">
     <script src="vp.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .logout-message {
             display: none;
             color: green;
@@ -99,11 +106,73 @@ $conn->close();
         }
 
         .selected-subject {
-            background-color: #FF0000;
+            background-color: #1e90ff;
             border-color: #badbcc;
         }
 
-        /* Add more styling if needed */
+        .tablinks {
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        .navtab button:hover {
+            cursor: pointer;
+            background-color: burlywood;
+        }
+
+        h6 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .planCard {
+            background-color: whitesmoke;
+            width: 270pt;
+            height: 280pt;
+            margin: 20pt;
+            border-radius: 10pt;
+            box-shadow: 1pt 1pt 15pt 1pt;
+        }
+
+        .tabcontent {
+            display: none;
+            text-align: center;
+            height: 500px;
+        }
+
+        #containerPlans {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #containerPlans p {
+            color: black;
+        }
+
+        ul {
+            font-weight: 900;
+            text-align: left;
+        }
+
+        .navSubject .selectIns select {
+            /*display: none;*/
+            text-align: center;
+            border-radius: 10pt;
+            width: 70%;
+            margin-left: 15%;
+            justify-self: center;
+            border-radius: 10pt;
+            width: 82%;
+            margin-left: 10%;
+            padding: 10px 20px;
+        }
+
+        .tabcontent {
+            display: none;
+            text-align: center;
+            height: 250pt;
+        }
     </style>
 </head>
 
@@ -152,10 +221,11 @@ $conn->close();
                         <?php endif; ?>
                     </div>
                 </div>
-                <div>
-                    <button onclick="location.href='../logout.php';" class="logout-button">Logout</button>
-                    <p id="logoutMessage" class="logout-message"></p>
-                </div>
+
+                <form action="../logout.php" method="post">
+                    <button class="logout_btn" type="submit">Logout</button>
+                </form>
+
             </nav>
             <div class="implementContainer">
                 <header>

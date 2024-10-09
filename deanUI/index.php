@@ -76,6 +76,32 @@ $conn->close();
     <title>IDIS</title>
     <link rel="stylesheet" href="dean.css">
     <script src="dean.js"></script>
+    <style>
+        .planCard {
+            background-color: whitesmoke;
+            width: 270pt;
+            height: 280pt;
+            margin: 20pt;
+            border-radius: 10pt;
+            box-shadow: 1pt 1pt 15pt 1pt;
+        }
+
+        .tabcontent {
+            display: none;
+            text-align: center;
+            height: 1000px;
+        }
+
+        #containerPlans {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #containerPlans p {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -142,7 +168,7 @@ $conn->close();
                     <div class="filesContainer">
                         <div id="ILOs" class="tabcontent">
                             <h6><br>Implement</h6>
-                            <div id="container_plans">
+                            <div id="containerPlans">
                                 <div class="planCard" id="syllabusCard" style="display: none;">
                                     <a href="print_syllabus" id="syllabusLink">
                                         <p>Syllabus</p>
@@ -158,7 +184,7 @@ $conn->close();
                         </div>
                         <div id="Topics" class="tabcontent">
                             <h6><br>The table below concludes all inputs.</h6>
-                            <div id="container_ompe">
+                            <div id="container_compe">
                                 <table class="remarksTable">
                                     <thead>
                                         <tr>

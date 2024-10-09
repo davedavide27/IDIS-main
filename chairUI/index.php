@@ -61,7 +61,7 @@ $conn->close();
     <style>
         /* Highlight selected subject */
         .selected-subject {
-            background-color: #3498db;
+            background-color: #1e90ff;
             color: white;
             font-weight: bold;
         }
@@ -73,7 +73,6 @@ $conn->close();
             padding: 10px;
             width: 100%;
             border: none;
-            background-color: #f1f1f1;
             cursor: pointer;
         }
 
@@ -85,7 +84,7 @@ $conn->close();
 
         /* On selected, highlight the button */
         .subjectButton.selected-subject {
-            background-color: red;
+            background-color: #1e90ff;
             color: white;
             font-weight: bold;
         }
@@ -121,7 +120,7 @@ $conn->close();
                 <br><br>
                 <h4 style="text-align: center;">PENDING SUBJECTS</h4>
                 <div class="subsContainer">
-                    <div id="subjectsList" class="subjects">    
+                    <div id="subjectsList" class="subjects">
                         <!-- Subjects will be loaded here based on the selected instructor -->
                     </div>
                 </div>

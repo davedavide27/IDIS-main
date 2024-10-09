@@ -1,6 +1,7 @@
-*{
-    margin: 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+body{
+    background-color: #0C1821;
 }
 .containerOfAll{
     display: grid;
@@ -16,9 +17,7 @@ img{
     margin: 10pt;
     border-radius: 10%;
 }
-body{
-    background-color: #0C1821;
-}
+
 /*TOP PART*/
 
 
@@ -64,10 +63,15 @@ main{
     text-align: center;
     margin-bottom: 5pt;
     width: 100pt;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 10px;
+    padding: 10px;
 }
 
 /*DISPLAYS*/
-.navSubject ul{
+.navsubject ul{
     margin: 10pt;
     padding: 5pt;
     text-align: center;
@@ -77,18 +81,19 @@ main{
     display: flex;
     justify-content: center;
 }
-.navSubject .selectSub select{
-    /*display: none;*/
-    text-align: center;
-    border-radius: 10pt;
-    width: 70%;
-}
+
 .navSubject .selectIns select{
     /*display: none;*/
     text-align: center;
     border-radius: 10pt;
     width: 70%;
     margin-left: 15%;
+    justify-self: center;
+    text-align: center;
+    border-radius: 10pt;
+    width: 82%;
+    margin-left: 10%;
+    padding: 10px 20px;
 }
 .selectSub button{
     display: none;
@@ -156,6 +161,7 @@ header{
   display: none;
   text-align: center;
   height: 250pt;
+  width: 100%;
 }
 
 .navtab button:hover {
@@ -172,7 +178,7 @@ header{
 }
 
 table{
-    width: 95%;
+    width: 100%;
     text-align: center;
     color: white;
     margin-left: auto;
@@ -222,19 +228,48 @@ a{
     text-decoration-line: none;
     color: black;
 }
-#container{
+
+.planCard {
+    background-color: whitesmoke;
+    width: 270pt;
+    height: 280pt;
+    margin: 20pt;
+    border-radius: 10pt;
+    box-shadow: 1pt 1pt 15pt 1pt;
+}
+
+.tabcontent {
+    display: none;
+    text-align: center;
+    height: 1000px;
+}
+
+#containerPlans {
     display: flex;
     justify-content: center;
 }
-#container p{
+
+#containerPlans p {
     color: black;
 }
-.planCard{
-    background-color: whitesmoke;
-    width: 170pt;
-    height: 180pt;
-    margin: 20pt;
-    border-top-right-radius: 10pt;
-    border-bottom-left-radius: 10pt;
-    box-shadow: 1pt 1pt 15pt 1pt;
+
+.logout_btn{
+    display: block;
+    margin: auto;
+    margin-top: 223px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background: #1e90ff;
+    color: fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    -webkit-transform-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.logout_btn:hover, logout_btn:focus, logout_btn:active{
+    box-shadow: 0 0 20px rgba (0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
