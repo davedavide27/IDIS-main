@@ -147,14 +147,17 @@ main{
 }*/
 
 .navtab {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    justify-content:center ;
+    grid-template-columns: 30% 30% 30%;
 }
 .navtab button{
     border-top-left-radius: 5pt;
     border-top-right-radius: 5pt;
 }
-
+.navtab button:hover {
+    cursor: pointer;
+    background-color: burlywood;
+    }
 /*FONT STYLES*/
 li{
     list-style-type: none;
@@ -169,17 +172,13 @@ header{
   display: none;
   text-align: center;
   height: 500px;
-  overflow-y: auto;
 }
 
 .tablinks{
     font-weight: 800;
     font-size: 1rem;
 }
-.navtab button:hover {
-    cursor: pointer;
-    background-color: burlywood;
-    }
+
 
 h6{
     font-size: 1rem;
@@ -190,7 +189,7 @@ h6{
 
 
 .br{
-    background-color: #324A5F;
+    background-color: #324A5F;  
 }
 
 table{
@@ -244,20 +243,17 @@ a{
     text-decoration-line: none;
     color: black;
 }
-.container_plans {
+.containerPlan {
     display: flex;
-    justify-content: center;
     margin-top: -20px;
-}
-#container_plans p{
     color: black;
 }
-.container_compe{
-    display: flex;
-    justify-content: center;
+.containerPlan p{
     color: black;
 }
+
 .planCard{
+    justify-content:center;
     background-color: whitesmoke;
     width: 270pt;
     height: 280pt;

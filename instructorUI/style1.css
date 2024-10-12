@@ -27,7 +27,7 @@ li{
     list-style: lower-alpha;
     font-weight: normal;
 }
-p, div{
+p{
     font-weight: normal;
 }
 h3, p{

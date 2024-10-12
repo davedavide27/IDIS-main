@@ -90,60 +90,57 @@ $conn->close();
         /* Comment Card Styling */
         .commentCard {
             border: 2px solid #ccc;
-            /* Light grey border */
             border-radius: 8px;
-            /* Slight rounding of corners */
             margin-bottom: 15px;
-            /* Increase spacing between cards */
             padding: 15px;
-            /* Increase padding inside the card */
             background-color: #f9f9f9;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            /* Add subtle shadow for depth */
             width: 96.5%;
             text-align: left;
             justify-content: left;
-            line-height: 1.8;
+            color: #333;
         }
 
         /* Comment Card Title Styling */
         .commentCard h6 {
             font-size: 1.2em;
             margin-bottom: 8px;
-            /* Increase margin for better separation */
             font-weight: bold;
-            /* Make the text bolder */
-            color: #333;
-            /* Darker color for better readability */
+            color: #000;
+        }
+
+        .commentCard p {
+            color: #000;
         }
 
         /* Comment Card Content Styling */
         .commentCard .content {
             font-size: 1em;
             margin-bottom: 15px;
-            /* Add more space after content */
-            color: #555;
-            /* Slightly lighter text color */
+            color: #333;
         }
 
-        /* Comment Card Footer Topic Styling */
         .commentCard .footerTopic {
             font-size: 0.9em;
             color: #666;
-            /* Lighter grey for footers */
             font-style: italic;
-            /* Italicized for differentiation */
         }
 
 
         #containerComment,
         #competenciesTable {
             max-height: 420pt;
-            /* Adjust height to control scrollable area */
-            overflow-y: auto;
-            /* Allow scrolling when content overflows */
             padding: 10px;
             margin-bottom: 20px;
+        }
+
+        .navtab {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+        }
+
+        .tabcontent {
+            text-align: center;
+            height: 705px;
         }
     </style>
 </head>
@@ -203,7 +200,7 @@ $conn->close();
                                         <input type="hidden" name="syllabus_subject_code" id="syllabus_subject_code">
                                         <input type="hidden" name="syllabus_subject_name" id="syllabus_subject_name">
                                         <button type="submit" style="all: unset; cursor: pointer; display: block; width: 100%; height: 100%;">
-                                            <p style="text-align: center; margin: 0;">Syllabus</p>
+                                            <p style="margin: 0;color:black">Syllabus</p>
                                         </button>
                                     </form>
                                 </div>
@@ -214,7 +211,7 @@ $conn->close();
                                         <input type="hidden" name="subject_code" id="selected_subject_code">
                                         <input type="hidden" name="subject_name" id="selected_subject_name">
                                         <button type="submit" style="all: unset; cursor: pointer; display: block; width: 100%; height: 100%;">
-                                            <p style="text-align: center; margin: 0;">Competencies</p>
+                                            <p style="text-align: center; margin: 0; color:black">Competencies</p>
                                         </button>
                                     </form>
                                 </div>
