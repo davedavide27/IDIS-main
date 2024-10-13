@@ -3,11 +3,12 @@
 *{
     margin: 0%;
     font-family: 'Montserrat', sans-serif;
+    
 }
 .containerOfAll{
     display: grid;
     background-color: #0C1821;
-    height: 577pt;
+    height: 580pt;
 }
 div .logo{
     text-align: center;
@@ -27,11 +28,10 @@ body{
 /*CONTAINERS*/
 .subjectsContainer{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 84.9%;
 }
 .navSubject{
     background-color: #324A5F;
-    height: auto;
 }
 .implementContainer{
     background-color: #0C1821;
@@ -39,7 +39,6 @@ body{
 }
 .implementContainer h5, p{
     color: white;
-    font-size: 1rem;
 }
 .navtab button{
     background-color: goldenrod;
@@ -47,13 +46,13 @@ body{
     margin-right: 1pt;
     margin-top: 30pt;
     height: 20pt;
-    box-shadow: 0pt -1pt 7pt 1pt
+    box-shadow: -1pt -1pt 15pt 1pt
 }
 main{
     background-color: burlywood;
     width: 100%;
     border-bottom-right-radius: 10pt;
-    box-shadow: 10px 10px 20px;
+    box-shadow: 10px 20px 20px;
 }
 .subList{
     background-color: white;
@@ -68,11 +67,9 @@ main{
     text-align: center;
     margin-bottom: 5pt;
     width: 100pt;
-    border-radius: 10px;
-    border-style: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    margin-top: 10px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 8px;
+
 }
 
 
@@ -95,12 +92,10 @@ main{
 }
 .navSubject .selectIns select{
     /*display: none;*/
-    justify-self: center;
     text-align: center;
     border-radius: 10pt;
-    width: 82%;
-    margin-left: 10%;
-    padding: 10px 20px;
+    width: 70%;
+    margin-left: 15%;
 }
 .selectSub button{
     display: none;
@@ -139,7 +134,6 @@ main{
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px;
     background-color: goldenrod;
-    align-items: center;
 }
 
 /*.navSubject button:hover .dropdownBtnContent {
@@ -147,17 +141,14 @@ main{
 }*/
 
 .navtab {
-    justify-content:center ;
-    grid-template-columns: 30% 30% 30%;
+    display: grid;
+    grid-template-columns: 33% 33% 34.2%;
 }
 .navtab button{
     border-top-left-radius: 5pt;
     border-top-right-radius: 5pt;
 }
-.navtab button:hover {
-    cursor: pointer;
-    background-color: burlywood;
-    }
+
 /*FONT STYLES*/
 li{
     list-style-type: none;
@@ -171,25 +162,26 @@ header{
 .tabcontent{
   display: none;
   text-align: center;
-  height: 500px;
+  height: 540pt;
 }
 
 .tablinks{
-    font-weight: 800;
-    font-size: 1rem;
+    font-weight: 900;
 }
+.navtab button:hover {
+    cursor: pointer;
+    background-color: burlywood;
+    }
 
-
-h6{
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
 /*MAIN nani dire dapit*/
 
-
+ul{
+    font-weight: 900;
+    text-align: left;
+}
 
 .br{
-    background-color: #324A5F;  
+    background-color: #324A5F;
 }
 
 table{
@@ -243,29 +235,47 @@ a{
     text-decoration-line: none;
     color: black;
 }
-.containerPlan {
+#containerPlan{
     display: flex;
-    margin-top: -20px;
+    justify-content: center;
+}
+#containerPlan p{
     color: black;
 }
-.containerPlan p{
-    color: black;
+.planCard{
+    background-color: whitesmoke;
+    width: 300pt;
+    height: 300pt;
+    margin: 20pt;
+    border-top-right-radius: 10pt;
+    border-bottom-left-radius: 10pt;
+    box-shadow: 1pt 1pt 15pt 1pt;
 }
 
-.planCard{
-    justify-content:center;
-    background-color: whitesmoke;
-    width: 270pt;
-    height: 280pt;
-    margin: 20pt;
-    border-radius: 10pt;
-    box-shadow: 1pt 1pt 15pt 1pt;
+#containerComment{
+    padding: 20pt;
+}
+.commentCard{
+    float: left;
+    background-color: white;
+    color: black;
+    border-radius: 5pt;
+    margin: 5pt;
+}
+.commentCard p{
+    color: black;
+}
+.commentCard .footerTopic{
+    background-color: #0C1821;
+    color: white;
+    border-bottom-right-radius: 5pt;
+    border-bottom-left-radius: 5pt;
 }
 
 .logout_btn{
     display: block;
     margin: auto;
-    margin-top: 223px;
+    margin-top: 240px;
     padding: 7px 20px;
     border-radius: 5px;
     border-style: none;
@@ -281,22 +291,4 @@ a{
     box-shadow: 0 0 20px rgba (0,0,0,0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-ul{
-    font-weight: 900;
-    text-align: left;
-}
-.logout-message {
-    display: none;
-    color: green;
-    font-weight: bold;
-}
-/* Highlight the selected subject button */
-.selected-subject {
-    background-color: #1e90ff;
-}
-
-.intructor_Name{
-    align-items: center;
 }

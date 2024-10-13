@@ -244,15 +244,15 @@ a{
     text-decoration-line: none;
     color: black;
 }
-#container_plans {
+#containerPlans {
     display: flex;
     justify-content: center;
     margin-top: -20px;
 }
-#container_plans p{
+#containerPlans p{
     color: black;
 }
-.container_compe{
+.containerPlans{
     display: flex;
     justify-content: center;
     color: black;

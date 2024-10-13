@@ -77,6 +77,13 @@ $conn->close();
     <link rel="stylesheet" href="dean.css">
     <script src="dean.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .planCard {
             background-color: whitesmoke;
             width: 270pt;
@@ -100,6 +107,33 @@ $conn->close();
 
         #containerPlans p {
             color: black;
+        }
+
+        ul {
+            font-weight: 800;
+            margin-top: 20pt;
+        }
+
+        .tablinks {
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        h6 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .navtab {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        main {
+            background-color: burlywood;
+            width: 100%;
+            border-bottom-right-radius: 10pt;
+            box-shadow: 10px 20px 20px;
         }
     </style>
 </head>

@@ -4,12 +4,16 @@
     margin: 0%;
     font-family: 'Montserrat', sans-serif;
 }
+
+body{
+    background-color: #0C1821;
+}
 .containerOfAll{
     display: grid;
     background-color: #0C1821;
     height: 577pt;
 }
-.logo{
+div .logo{
     text-align: center;
     height: 70pt;
 }
@@ -18,9 +22,7 @@ img{
     margin: 10pt;
     border-radius: 10%;
 }
-body{
-    background-color: #0C1821;
-}
+
 /*TOP PART*/
 
 
@@ -31,7 +33,6 @@ body{
 }
 .navSubject{
     background-color: #324A5F;
-    height: auto;
 }
 .implementContainer{
     background-color: #0C1821;
@@ -39,7 +40,6 @@ body{
 }
 .implementContainer h5, p{
     color: white;
-    font-size: 1rem;
 }
 .navtab button{
     background-color: goldenrod;
@@ -47,13 +47,13 @@ body{
     margin-right: 1pt;
     margin-top: 30pt;
     height: 20pt;
-    box-shadow: 0pt -1pt 7pt 1pt
+    box-shadow: -1pt -1pt 15pt 1pt
 }
 main{
     background-color: burlywood;
-    width: 100%;
+    width: 97.8%;
     border-bottom-right-radius: 10pt;
-    box-shadow: 10px 10px 20px;
+    box-shadow: 10px 20px 20px;
 }
 .subList{
     background-color: white;
@@ -75,9 +75,8 @@ main{
     padding: 10px;
 }
 
-
 /*DISPLAYS*/
-.navSubject ul{
+.navsubject ul{
     margin: 10pt;
     padding: 5pt;
     text-align: center;
@@ -87,14 +86,13 @@ main{
     display: flex;
     justify-content: center;
 }
-.navSubject .selectSub select{
+
+.navSubject .selectIns select{
     /*display: none;*/
     text-align: center;
     border-radius: 10pt;
     width: 70%;
-}
-.navSubject .selectIns select{
-    /*display: none;*/
+    margin-left: 15%;
     justify-self: center;
     text-align: center;
     border-radius: 10pt;
@@ -139,7 +137,6 @@ main{
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px;
     background-color: goldenrod;
-    align-items: center;
 }
 
 /*.navSubject button:hover .dropdownBtnContent {
@@ -148,7 +145,7 @@ main{
 
 .navtab {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
 }
 .navtab button{
     border-top-left-radius: 5pt;
@@ -166,23 +163,17 @@ header{
 }
 
 .tabcontent{
+  display: none;
   text-align: center;
-  height: 500px;
+  height: 250pt;
+  width: 100%;
 }
 
-.tablinks{
-    font-weight: 800;
-    font-size: 1rem;
-}
 .navtab button:hover {
     cursor: pointer;
     background-color: burlywood;
     }
 
-h6{
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
 /*MAIN nani dire dapit*/
 
 
@@ -192,7 +183,7 @@ h6{
 }
 
 table{
-    width: 95%;
+    width: 100%;
     text-align: center;
     color: white;
     margin-left: auto;
@@ -242,17 +233,18 @@ a{
     text-decoration-line: none;
     color: black;
 }
-.containerPlan {
-    margin-top: 20px;
-    color: black;
+#containerPlans{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
-#containerPlan p{
+#containerPlans p{
     color: black;
 }
 .planCard{
     background-color: whitesmoke;
-    width: 270pt;
-    height: 280pt;
+    width: 170pt;
+    height: 180pt;
     margin: 20pt;
     border-radius: 10pt;
     box-shadow: 1pt 1pt 15pt 1pt;
@@ -277,22 +269,4 @@ a{
     box-shadow: 0 0 20px rgba (0,0,0,0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-ul{
-    font-weight: 900;
-    text-align: left;
-}
-.logout-message {
-    display: none;
-    color: green;
-    font-weight: bold;
-}
-/* Highlight the selected subject button */
-.selected-subject {
-    background-color: #1e90ff;
-}
-
-.intructor_Name{
-    align-items: center;
 }

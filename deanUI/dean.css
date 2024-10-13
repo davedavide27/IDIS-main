@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+*{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
 
 body{
     background-color: #0C1821;
@@ -46,7 +51,7 @@ img{
 }
 main{
     background-color: burlywood;
-    width: 97.8%;
+    width: 100%;
     border-bottom-right-radius: 10pt;
     box-shadow: 10px 20px 20px;
 }
@@ -140,7 +145,7 @@ main{
 
 .navtab {
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 50% 50%;
 }
 .navtab button{
     border-top-left-radius: 5pt;
@@ -161,7 +166,7 @@ header{
   display: none;
   text-align: center;
   height: 250pt;
-  width: 100%;
+  width: 70%;
 }
 
 .navtab button:hover {
@@ -264,4 +269,8 @@ a{
     box-shadow: 0 0 20px rgba (0,0,0,0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+ul{
+    font-weight: 800;
 }
