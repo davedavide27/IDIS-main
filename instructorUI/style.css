@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 *{
     margin: 0%;
@@ -167,6 +167,7 @@ header{
 
 .tablinks{
     font-weight: 900;
+    font-size: 1rem;
 }
 .navtab button:hover {
     cursor: pointer;
@@ -247,8 +248,7 @@ a{
     width: 300pt;
     height: 300pt;
     margin: 20pt;
-    border-top-right-radius: 10pt;
-    border-bottom-left-radius: 10pt;
+    border-radius: 10pt;
     box-shadow: 1pt 1pt 15pt 1pt;
 }
 
@@ -291,4 +291,9 @@ a{
     box-shadow: 0 0 20px rgba (0,0,0,0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.selected-subject {
+    background-color: #1e90ff;
+    border-color: #badbcc;
 }

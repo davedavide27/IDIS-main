@@ -76,7 +76,7 @@ $conn->close();
 
         /* Selected Subject Button Styling */
         .selected-subject {
-            background-color: #FF0000;
+            background-color: #1e90ff;
             /* Add some thickness to the border */
             color: white;
             /* Make text white for better contrast */
@@ -84,6 +84,7 @@ $conn->close();
             /* Add padding to make it look more like a button */
             border-radius: 5px;
             /* Add border-radius for smooth edges */
+            border-style: none;
         }
 
         /* Comment Card Styling */
@@ -135,7 +136,7 @@ $conn->close();
         }
 
 
-        #containerComment ,
+        #containerComment,
         #competenciesTable {
             max-height: 420pt;
             /* Adjust height to control scrollable area */
@@ -143,6 +144,12 @@ $conn->close();
             /* Allow scrolling when content overflows */
             padding: 10px;
             margin-bottom: 20px;
+        }
+
+        h6 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            font-weight: 800;
         }
     </style>
 </head>
