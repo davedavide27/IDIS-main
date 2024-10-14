@@ -138,7 +138,7 @@ $conn->close();
 
         #containerComment,
         #competenciesTable {
-            max-height: 420pt;
+            max-height: 446.5pt;
             /* Adjust height to control scrollable area */
             overflow-y: auto;
             /* Allow scrolling when content overflows */
@@ -150,6 +150,27 @@ $conn->close();
             font-size: 1rem;
             margin-bottom: 10px;
             font-weight: 800;
+        }
+
+        .tabcontent {
+            display: none;
+            text-align: center;
+            height: 498pt;
+        }
+
+        .subjects button {
+            text-align: center;
+            margin-bottom: 5pt;
+            width: 100pt;
+            border-radius: 5px;
+            padding: 8px;
+            border-style: none;
+
+        }
+
+        .navtab {
+            display: grid;
+            grid-template-columns: 33% 33% 34.15%;
         }
     </style>
 </head>

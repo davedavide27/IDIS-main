@@ -69,6 +69,7 @@ main{
     width: 100pt;
     border-radius: 5px;
     padding: 8px;
+    border-style: none;
 
 }
 
@@ -142,7 +143,7 @@ main{
 
 .navtab {
     display: grid;
-    grid-template-columns: 33% 33% 34.2%;
+    grid-template-columns: 33% 33% 32.9%;
 }
 .navtab button{
     border-top-left-radius: 5pt;
@@ -162,7 +163,7 @@ header{
 .tabcontent{
   display: none;
   text-align: center;
-  height: 540pt;
+  height: 400pt;
 }
 
 .tablinks{
