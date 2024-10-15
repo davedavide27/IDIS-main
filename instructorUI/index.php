@@ -172,6 +172,11 @@ $conn->close();
             display: grid;
             grid-template-columns: 33% 33% 34.15%;
         }
+
+        h4 {
+            margin: 0%;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
