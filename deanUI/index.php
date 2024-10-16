@@ -95,17 +95,16 @@ $conn->close();
 
         .tabcontent {
             display: none;
-            text-align: center;
-            height: 1000px;
+            height: 250pt;
+            width: 70%;
         }
 
-        #containerPlans {
+        #containerPlan {
             display: flex;
-            justify-content: center;
             width: 100%;
         }
 
-        #containerPlans p {
+        #containerPlan p {
             color: black;
         }
 
