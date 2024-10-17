@@ -184,8 +184,6 @@ $conn->close();
         }
 
         h4 {
-            margin: 0%;
-            margin-bottom: 20px;
             margin-bottom: 20px;
         }
     </style>

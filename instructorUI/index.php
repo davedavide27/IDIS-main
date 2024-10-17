@@ -160,7 +160,7 @@ $conn->close();
 
         .subjects button {
             text-align: center;
-            margin-bottom: 5pt;
+            margin: 5pt;
             width: 100pt;
             border-radius: 5px;
             padding: 8px;
