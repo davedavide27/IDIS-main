@@ -137,22 +137,16 @@ $conn->close();
         .tabcontent {
             display: none;
             text-align: center;
-            height: 500px;
+            height: 498pt;
         }
 
         #containerPlans {
             display: flex;
             justify-content: center;
-            width: 100%;
         }
 
-        #containerPlans p {
+        .containerPlans p {
             color: black;
-        }
-
-        ul {
-            font-weight: 900;
-            text-align: left;
         }
 
         .navSubject .selectIns select {
@@ -172,6 +166,27 @@ $conn->close();
             display: none;
             text-align: center;
             height: 250pt;
+        }
+
+        main {
+            background-color: burlywood;
+            height: 60%;
+            width: 100%;
+            border-bottom-right-radius: 10pt;
+            box-shadow: 10px 20px 20px;
+        }
+
+        ul {
+            font-weight: 900;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin: 0%;
+            margin-bottom: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -242,7 +257,7 @@ $conn->close();
                     <div class="filesContainer">
                         <div id="ILOs" class="tabcontent">
                             <h6><br>View for Signatures</h6>
-                            <div id="container">
+                            <div id="containerPlans">
                                 <div class="planCard" id="syllabusCard" style="display: none;">
                                     <a href="#" id="syllabusLink" onclick="printSyllabus()">
                                         <p>Syllabus</p>
