@@ -162,10 +162,10 @@ header{
     padding-top: 20pt;
 }
 
-.tabcontent{
-  display: none;
-  height: 250pt;
-  width: 70%;
+.tabcontent {
+    display: none;
+    text-align: center;
+    height: 498pt;
 }
 
 .navtab button:hover {
@@ -232,7 +232,7 @@ a{
     text-decoration-line: none;
     color: black;
 }
-#containerPlans{
+.containerPlans{
     display: flex;
     justify-content: center;
     width: 100%;
