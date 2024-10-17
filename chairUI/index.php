@@ -88,6 +88,19 @@ $conn->close();
             color: white;
             font-weight: bold;
         }
+
+        #containerPlan {
+            display: flex;
+            justify-content: center;
+        }
+
+        .containerPlan p {
+            color: black;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 

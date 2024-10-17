@@ -242,11 +242,11 @@ a{
     text-decoration-line: none;
     color: black;
 }
-.containerPlan {
-    margin-top: 20px;
-    color: black;
+#containerPlan {
+    display: flex;
+    justify-content: center;
 }
-#containerPlan p{
+.containerPlan p{
     color: black;
 }
 .planCard{
