@@ -92,6 +92,14 @@ $conn->close();
     <link rel="stylesheet" href="vp.css">
     <script src="vp.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0%;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
         .logout-message {
             display: none;
             color: green;
@@ -99,8 +107,129 @@ $conn->close();
         }
 
         .selected-subject {
-            background-color: #FF0000;
-            border-color: #badbcc;
+            background-color: #60afff;
+        }
+
+        .logout_btn {
+            display: block;
+            margin: auto;
+            margin-top: 140px;
+            padding: 7px 20px;
+            border-radius: 5px;
+            border-style: none;
+            background: #1e90ff;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            -webkit-transform-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        .logout_btn:hover,
+        .logout_btn:focus,
+        .logout_btn:active {
+            box-shadow: 0 0 20px rgba (0, 0, 0, 0.5);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .navSubject ul {
+            margin: 10pt;
+            padding: 5pt;
+            text-align: center;
+        }
+
+        .selectSub {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navSubject .selectSub select {
+            /*display: none;*/
+            text-align: center;
+            border-radius: 10pt;
+            width: 70%;
+        }
+
+        .navSubject .selectIns select {
+            /*display: none;*/
+            text-align: center;
+            border-radius: 10pt;
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        .planCard {
+            background-color: whitesmoke;
+            width: 300pt;
+            height: 300pt;
+            margin: 20pt;
+            border-radius: 10pt;
+            box-shadow: 1pt 1pt 15pt 1pt;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        h6 {
+            font-size: 1rem;
+            font-weight: 800;
+        }
+
+        .tablinks {
+            font-weight: 900;
+            font-size: 1rem;
+        }
+
+        main {
+            background-color: burlywood;
+            width: 100%;
+            height: 70%;
+            border-bottom-right-radius: 10pt;
+            box-shadow: 10px 20px 20px;
+        }
+
+        .subjects button {
+            text-align: center;
+            margin-bottom: 10pt;
+            width: 100pt;
+            border-radius: 5px;
+            padding: 8px;
+            border-style: none;
+
+        }
+
+        ul {
+            font-weight: 800;
+        }
+
+        .subjects button {
+            text-align: center;
+            margin-bottom: 5pt;
+            width: 100pt;
+        }
+
+        .navSubject .selectSub select {
+            /*display: none;*/
+            text-align: center;
+            border-radius: 10pt;
+            width: 70%;
+        }
+
+        .navSubject .selectIns select {
+            /*display: none;*/
+            justify-self: center;
+            text-align: center;
+            border-radius: 10pt;
+            width: 82%;
+            margin-left: 10%;
+            padding: 10px 20px;
+        }
+
+        .selectSub select:hover {
+            cursor: pointer;
+            box-shadow: 2px 2px 2px 2px;
         }
 
         /* Add more styling if needed */
@@ -152,10 +281,11 @@ $conn->close();
                         <?php endif; ?>
                     </div>
                 </div>
-                <div>
-                    <button onclick="location.href='../logout.php';" class="logout-button">Logout</button>
-                    <p id="logoutMessage" class="logout-message"></p>
-                </div>
+
+                <form action="../logout.php" method="post">
+                    <button class="logout_btn" type="submit">Logout</button>
+                </form>
+
             </nav>
             <div class="implementContainer">
                 <header>

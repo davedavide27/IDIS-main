@@ -142,6 +142,17 @@ $conn->close();
             border: none;
             cursor: pointer;
         }
+
+        button {
+            height: 25pt;
+            width: auto;
+            border-style: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #6ab2ff;
+        }
     </style>
 </head>
 

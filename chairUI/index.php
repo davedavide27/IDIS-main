@@ -73,7 +73,6 @@ $conn->close();
 
         h4 {
             font-weight: 800;
-            margin-bottom: 20px;
         }
 
 
@@ -94,6 +93,7 @@ $conn->close();
             background-color: #f1f1f1;
             cursor: pointer;
             border-radius: 10px;
+            overflow-y: 50% auto;
         }
 
         /* On hover, change button background */
@@ -113,7 +113,7 @@ $conn->close();
         .logout_btn {
             display: block;
             margin: auto;
-            margin-top: 240px;
+            margin-top: 80px;
             padding: 7px 20px;
             border-radius: 5px;
             border-style: none;
@@ -133,16 +133,44 @@ $conn->close();
             transform: scale(1.1);
         }
 
+
+        h6 {
+            font-size: 1rem;
+        }
+
+        .navSubject .selectSub select {
+            /*display: none;*/
+            text-align: center;
+            border-radius: 10pt;
+            width: 70%;
+        }
+
+        .navSubject .selectIns select {
+            /*display: none;*/
+            justify-self: center;
+            text-align: center;
+            border-radius: 10pt;
+            width: 82%;
+            margin-left: 10%;
+            padding: 10px 20px;
+        }
+
+        .selectSub select:hover {
+            cursor: pointer;
+            box-shadow: 2px 2px 2px 2px;
+        }
+
+        .tablinks {
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
         main {
             background-color: burlywood;
             width: 100%;
             height: 50%;
             border-bottom-right-radius: 10pt;
             box-shadow: 10px 20px 20px;
-        }
-
-        h6 {
-            font-size: 1rem;
         }
     </style>
 </head>

@@ -65,15 +65,14 @@ main{
 }
 
 .subjects button{
-    text-align: center;
-    margin-bottom: 5pt;
-    width: 100pt;
-    border-radius: 10px;
-    border-style: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    margin-top: 10px;
-    padding: 10px;
-}
+        text-align: center;
+        margin-bottom: 5pt;
+        width: 100pt;
+        border-radius: 10px;
+        padding: 8px;
+        border-style: none;
+
+    }
 
 
 /*DISPLAYS*/
@@ -102,6 +101,10 @@ main{
     margin-left: 10%;
     padding: 10px 20px;
 }
+.selectSub select:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px;
+}
 .selectSub button{
     display: none;
     border-style: none;
@@ -113,10 +116,7 @@ main{
     box-shadow: 2px 2px 2px 2px;
     background-color: goldenrod;
 }
-.selectSub select:hover{
-    cursor: pointer;
-    box-shadow: 2px 2px 2px 2px;
-}
+
 .navSubject .subList button{
     display: none;
     background-color: white;
