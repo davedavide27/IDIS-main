@@ -129,6 +129,28 @@ $conn->close();
     <link rel="stylesheet" href="select.css">
     <title>Assign Subjects</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0%;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        @media (max-width: 768px) {
+            .subject-list div {
+                flex: 1 1 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            .back-button {
+                width: 50pt;
+            }
+        }
+
         .containerOfAll {
             margin: 20px auto;
             padding: 20px;
@@ -239,6 +261,11 @@ $conn->close();
         .back-button:hover {
             background-color: #d32f2f;
         }
+
+        .search-container select,
+        input {
+            background-color: #f9f9f9;
+        }
     </style>
 </head>
 
@@ -262,7 +289,7 @@ $conn->close();
         <!-- Error Messages Container -->
         <div class="notification-container" id="error-container">
             <?php if (isset($_SESSION['error_message'])): ?>
-                <?php 
+                <?php
                 $errors = explode("<br>", $_SESSION['error_message']);
                 foreach ($errors as $error): ?>
                     <div class="notification error">
@@ -375,7 +402,7 @@ $conn->close();
                     if (clearAllSuccessButton) clearAllSuccessButton.style.display = 'none';
                     if (clearAllErrorButton) clearAllErrorButton.style.display = 'none';
                 }
-            }, 500); 
+            }, 500);
         } else {
             notification.classList.add('fade-out');
             setTimeout(() => {
@@ -388,7 +415,7 @@ $conn->close();
                     if (clearAllSuccessButton) clearAllSuccessButton.style.display = 'none';
                     if (clearAllErrorButton) clearAllErrorButton.style.display = 'none';
                 }
-            }, 500); 
+            }, 500);
         }
     }
 
@@ -410,25 +437,25 @@ $conn->close();
     const clearAllSuccessButton = document.getElementById('clearAllSuccessButton');
     const clearAllErrorButton = document.getElementById('clearAllErrorButton');
 
-    if (clearAllSuccessButton) { 
+    if (clearAllSuccessButton) {
         clearAllSuccessButton.addEventListener('click', function() {
             const notifications = document.querySelectorAll('.notification.success');
             notifications.forEach((notification, index) => {
                 setTimeout(() => {
                     removeNotification(notification, true);
-                }, index * 100); 
+                }, index * 100);
             });
             clearAllSuccessButton.style.display = 'none';
         });
     }
 
-    if (clearAllErrorButton) { 
+    if (clearAllErrorButton) {
         clearAllErrorButton.addEventListener('click', function() {
             const notifications = document.querySelectorAll('.notification.error');
             notifications.forEach((notification, index) => {
                 setTimeout(() => {
                     removeNotification(notification, true);
-                }, index * 100); 
+                }, index * 100);
             });
             clearAllErrorButton.style.display = 'none';
         });

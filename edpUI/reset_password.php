@@ -105,10 +105,13 @@ $conn->close();
         .containerOfAll {
             margin: 20px auto;
             padding: 20px;
-            max-width: 800px;
             background-color: #f9f9f9;
             border-radius: 10px;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 170pt auto;
+
+
         }
 
         h3 {
@@ -181,7 +184,7 @@ $conn->close();
             cursor: pointer;
             top: 10px;
             left: 20px;
-            width: 25%;
+            width: 10%;
         }
 
         .back-button:hover {
@@ -195,6 +198,18 @@ $conn->close();
 
         label {
             margin-top: 10px;
+        }
+
+        select {
+            margin: 0;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #333;
+            width: 100%;
+            padding: 12px;
+            border-color: #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
     </style>
 </head>
@@ -287,21 +302,21 @@ $conn->close();
         }
 
         // Notification handling logic
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const notification = document.querySelector('.notification');
             const clearAllButton = document.getElementById('clearAllButton');
 
             if (clearAllButton) {
-                clearAllButton.addEventListener('click', function () {
+                clearAllButton.addEventListener('click', function() {
                     notification.remove();
                     clearAllButton.style.display = 'none';
                 });
             }
 
             if (notification) {
-                setTimeout(function () {
+                setTimeout(function() {
                     notification.classList.add('fade-out');
-                    setTimeout(function () {
+                    setTimeout(function() {
                         notification.remove();
                     }, 500);
                 }, 4000);

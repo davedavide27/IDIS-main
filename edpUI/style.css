@@ -1,9 +1,9 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 .containerOfAll {
@@ -65,10 +65,7 @@ button:hover {
     color: green;
     font-weight: bold;
 }
-.containerOfAll {
-    display: flex;
-    height: 100vh;
-}
+
 .subjectsContainer {
     width: 25%;
     background-color: #f0f0f0;
@@ -92,6 +89,11 @@ button:hover {
 }
 .btnSubjects button:hover, .navtab button:hover {
     background-color: #529ed5;
+}
+select{
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #333;
 }
 .selectIns select {
     width: 100%;

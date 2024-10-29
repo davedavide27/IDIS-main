@@ -195,7 +195,7 @@ $conn->close();
             font-size: 16px;
             line-height: 1.5;
             color: #495057;
-            background-color: #fff;
+            background-color: #f9f9f9;
             background-clip: padding-box;
             border: 1px solid #ced4da;
             border-radius: 5px;
@@ -213,6 +213,14 @@ $conn->close();
             border-color: #80bdff;
             outline: none;
             box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
+        }
+
+        form button {
+            width: 100%;
+        }
+
+        label {
+            padding-left: 10px;
         }
     </style>
 </head>
@@ -288,7 +296,7 @@ $conn->close();
                 <option value="3" <?php echo (isset($_SESSION['form_data']['year_level']) && $_SESSION['form_data']['year_level'] == '3') ? 'selected' : ''; ?>>3rd Year</option>
                 <option value="4" <?php echo (isset($_SESSION['form_data']['year_level']) && $_SESSION['form_data']['year_level'] == '4') ? 'selected' : ''; ?>>4th Year</option>
             </select>
-                    <br>
+            <br>
             <button type="submit" name="create_student" style="margin: 0 auto; display: block;">Create Student</button>
         </form>
     </div>

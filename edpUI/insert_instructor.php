@@ -73,6 +73,28 @@ $conn->close();
     <link rel="stylesheet" href="../style2.css">
     <title>Create Instructor</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0%;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        @media (max-width: 768px) {
+            .subject-list div {
+                flex: 1 1 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            .back-button {
+                width: 50pt;
+            }
+        }
+
         .containerOfAll {
             margin: 20px auto;
             padding: 20px;
@@ -161,7 +183,14 @@ $conn->close();
         .back-button:hover {
             background-color: #d32f2f;
         }
-        
+
+        form button {
+            width: 100%;
+        }
+
+        label {
+            padding-left: 10px;
+        }
     </style>
 </head>
 
@@ -213,7 +242,7 @@ $conn->close();
             <label for="password">Password:</label>
             <input type="password" name="password" required>
 
-            <button type="submit" style="margin: 0 auto; display: block;"name="create_instructor">Create Instructor</button>
+            <button type="submit" style="margin: 0 auto; display: block;" name="create_instructor">Create Instructor</button>
         </form>
     </div>
 
